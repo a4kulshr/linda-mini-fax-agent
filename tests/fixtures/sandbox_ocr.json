@@ -1,0 +1,210 @@
+{
+ "inventory": [
+  {
+   "fax_id": "FX-212",
+   "received_at": "2026-11-03 09:03",
+   "sender": "Central Care Associates",
+   "ui_pages": 3,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-211",
+   "received_at": "2026-11-03 08:54",
+   "sender": "Northbridge Imaging",
+   "ui_pages": 1,
+   "status": "Routed"
+  },
+  {
+   "fax_id": "FX-210",
+   "received_at": "2026-11-03 08:49",
+   "sender": "Bayview Family Practice",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-209",
+   "received_at": "2026-11-03 08:42",
+   "sender": "Unidentified Fax Number",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-208",
+   "received_at": "2026-11-03 08:37",
+   "sender": "Summit Diagnostic Labs",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-207",
+   "received_at": "2026-11-03 08:31",
+   "sender": "Example Health Plan",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-206",
+   "received_at": "2026-11-03 08:25",
+   "sender": "Hillside Records Office",
+   "ui_pages": 2,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-205",
+   "received_at": "2026-11-03 08:19",
+   "sender": "Harbor Community Pharmacy",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-204",
+   "received_at": "2026-11-03 08:12",
+   "sender": "Blue Ridge Medical",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-203",
+   "received_at": "2026-11-03 08:12",
+   "sender": "Blue Ridge Medical",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-202",
+   "received_at": "2026-11-03 08:06",
+   "sender": "Summit Diagnostic Labs",
+   "ui_pages": 1,
+   "status": "New"
+  },
+  {
+   "fax_id": "FX-201",
+   "received_at": "2026-11-03 08:02",
+   "sender": "Bayview Family Practice",
+   "ui_pages": 2,
+   "status": "New"
+  }
+ ],
+ "ocr": {
+  "FX-201": [
+   {
+    "page": 1,
+    "confidence": 93.3,
+    "readable": true,
+    "text": "BAYVIEW FAMILY PRACTICE\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nFAX COVER SHEET\n\nTo: Harbor Specialty Clinic - Intake Department\nFrom: Bayview Family Practice\n\nNumber of pages (including cover): 2\n\nDate: November 3, 2026\nRE: Documents enclosed for new consultation\n\nConfidential patient paperwork follows on the next page.\n\nPlease route this packet according to the enclosed document.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-201 Pagel of2\n"
+   },
+   {
+    "page": 2,
+    "confidence": 94.7,
+    "readable": true,
+    "text": "BAYVIEW FAMILY PRACTICE\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nNEW PATIENT REFERRAL REQUEST\n\nDocument ID: RF-3001\nPatient: Elena Hart\n\nDate of Birth: 04/16/1987\n\nReferring physician: Dr. Mira Gomez\nRequested service: Neurology consultation\n\nReason: Evaluation of recurrent headaches.\n\nPriority: Routine\n\nPlease review attached patient details.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-201 Page 2 of 2\n\n"
+   }
+  ],
+  "FX-202": [
+   {
+    "page": 1,
+    "confidence": 92.0,
+    "readable": true,
+    "text": "SUMMIT DIAGNOSTIC LABS\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nLABORATORY RESULTS\n\nDocument reference: LAB-8302\nPatient: Marcus Bell\n\nDOB: 09/03/1974\n\nOrdering clinician: Dr. Anika Das\nCollection date: 11/02/2026\n\nPanel: Basic metabolic panel\n\nResult: Potassium 6.3 mmol/L\n\nCRITICAL RESULT - CALLING PROVIDER\n\nCritical value notification documented at 07:55.\n\nFor immediate review by authorized clinical personnel.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-202 Pagel ofl\n\n"
+   }
+  ],
+  "FX-203": [
+   {
+    "page": 1,
+    "confidence": 93.1,
+    "readable": true,
+    "text": "BLUE RIDGE RADIOLOGY\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nDIAGNOSTIC IMAGING REPORT\n\nAccession Number: IMG-4003\nPatient: Naomi Lee\n\nDOB: 12/11/1990\n\nStudy: MRI cervical spine without contrast\nStudy date: 11/01/2026\n\nFindings: Multilevel degenerative change.\n\nImpression: See full radiology findings.\nInterpreting radiologist: Dr. J}. Webb\n\nFINAL RADIOLOGY REPORT\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-203 Pagelofl\n\n"
+   }
+  ],
+  "FX-204": [
+   {
+    "page": 1,
+    "confidence": 91.8,
+    "readable": true,
+    "text": "BLUE RIDGE MEDICAL\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nPRIOR AUTHORIZATION REQUEST\n\nRequest ID: PA-4004\nPatient: Oliver Grant\n\nDOB: 06/21/1983\n\nOrdering provider: Dr. S. Raman\nService requested: MRI lumbar spine\n\nPayer: Example Health Plan (synthetic)\n\nStatus: Documentation requested for prior authorization.\nPlease review coverage requirements.\n\nThis document is not an authorization approval.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-204 Pagel ofl\n\n"
+   }
+  ],
+  "FX-205": [
+   {
+    "page": 1,
+    "confidence": 93.8,
+    "readable": true,
+    "text": "HARBOR COMMUNITY PHARMACY\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nPRESCRIPTION REFILL REQUEST\n\nRequest number: RX-4005\nPatient: Sydney Patel\n\nDOB: 08/07/1988\n\nMedication: Lisinopril 10 mg tablet\nRequest: Renewal authorization requested\n\nPrescriber: Dr. M. Shaw\n\nPharmacy callback: (555) 010-0105\nNo dispensing authorization is implied by this fax.\n\nReply to pharmacy through normal clinic workflow.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-205 Pagelofl\n\n"
+   }
+  ],
+  "FX-206": [
+   {
+    "page": 1,
+    "confidence": 94.9,
+    "readable": true,
+    "text": "HILLSIDE RECORDS OFFICE\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nREQUEST FOR MEDICAL RECORDS\n\nRecords request ID: MR-4006\nPatient: Cameron Blake\n\nDOB: 02/09/1980\n\nRequesting entity: Hillside Medical Group\nRequested records: Office visits, imaging reports\n\nDate range requested: 2025-2026\n\nPatient authorization: Included on page 2\n\nPlease process according to clinic release policy.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-206 Page 1 of 2\n"
+   },
+   {
+    "page": 2,
+    "confidence": 94.7,
+    "readable": true,
+    "text": "HILLSIDE RECORDS OFFICE\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nAUTHORIZATION TO RELEASE INFORMATION\n\nRelated request: MR-4006\nPatient: Cameron Blake\n\n| authorize release of records to Hillside Medical Group.\n\nSignature: Cameron Blake (synthetic example)\nDate signed: 10/31/2026\n\nFor assessment purposes only.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-206 Page 2 of 2\n\n"
+   }
+  ],
+  "FX-207": [
+   {
+    "page": 1,
+    "confidence": 93.3,
+    "readable": true,
+    "text": "EXAMPLE HEALTH PLAN\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nEXPLANATION OF BENEFITS (EOB)\n\nRemittance ID: EOB-4007\nMember: Jordan Clark\n\nService date: 10/21/2026\n\nClaim reference: C-10778\nBilled amount: $320.00\n\nAllowed amount: $244.00\n\nPlan paid: $195.20\nPatient responsibility: $48.80\n\nThis is not a bill to the patient.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-207 Pagelofl\n\n"
+   }
+  ],
+  "FX-208": [
+   {
+    "page": 1,
+    "confidence": 91.3,
+    "readable": true,
+    "text": "SUMMIT DIAGNOSTIC LABS\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nLABORATORY REPORT\n\nReport ID: LAB-4008\nPatient: Talia Nguyen\n\nDOB: 01/27/1993\n\nOrdering physician: Dr. T. Howe\nCollection date: 11/02/2026\n\nPanel: CBC with differential\n\nStatus: Final\nResults: See values on following table\n\nNo urgent flag provided on this report.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-208 Pagel ofl\n\n"
+   }
+  ],
+  "FX-209": [
+   {
+    "page": 1,
+    "confidence": 92.7,
+    "readable": true,
+    "text": "UNKNOWN SENDER\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nFAX DOCUMENT\n\nTransmission ID: U-4009\nSubject: Patient paperwork\n\nAttached page appears incomplete.\n\nPlease see missing continuation page.\n\nNo readable document category or destination found.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-209 Pagelofl\n\n\n"
+   }
+  ],
+  "FX-210": [
+   {
+    "page": 1,
+    "confidence": 92.0,
+    "readable": true,
+    "text": "BAYVIEW FAMILY PRACTICE\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nFAX RESEND - REFERRAL REQUEST\n\nOriginal Document ID: RF-3001\nOriginal sent date: 11/03/2026\n\nPatient: Elena Hart\n\nDOB: 04/16/1987\nReferring physician: Dr. Mira Gomez\n\nRequested specialty: Neurology\n\nReason: Evaluation of recurrent headaches.\nPlease disregard if original was received.\n\nThis is a retransmission of the same referral.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-210 Pagel ofl\n\n"
+   }
+  ],
+  "FX-211": [
+   {
+    "page": 1,
+    "confidence": 94.1,
+    "readable": true,
+    "text": "NORTHBRIDGE IMAGING\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nFINAL IMAGING REPORT\n\nAccession: IMG-4111\nPatient: Elliot Brooks\n\nDOB: 07/18/1991\n\nExam: CT sinus without contrast\nReport status: Final\n\nImpression: Findings documented in full report.\n\nOrdering provider: Dr. D. Chen\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-211 Pagelofl\n\n"
+   }
+  ],
+  "FX-212": [
+   {
+    "page": 1,
+    "confidence": 92.0,
+    "readable": true,
+    "text": "CENTRAL CARE ASSOCIATES\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nFAX COVER - MULTIPLE ENCLOSURES\n\nTransmission reference: PKT-4012\nPatient: Riley Morgan\n\nContains multiple documents with different purposes.\nPage 2: Laboratory result\nPage 3: Imaging interpretation\n\nPlease review entire packet before filing.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-212 Page 1 of 3\n"
+   },
+   {
+    "page": 2,
+    "confidence": 94.1,
+    "readable": true,
+    "text": "CENTRAL CARE ASSOCIATES\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nLABORATORY REPORT\n\nDocument number: LAB-4012A\nPatient: Riley Morgan\n\nDOB: 03/18/1979\n\nPanel: Thyroid function\nFinal report, routine\n\nThis page is a laboratory result.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-212 Page 2 of 3\n"
+   },
+   {
+    "page": 3,
+    "confidence": 94.8,
+    "readable": true,
+    "text": "CENTRAL CARE ASSOCIATES\n\nFAX TRANSMISSION / SCANNED DOCUMENT\n\nRADIOLOGY REPORT\n\nDocument number: IMG-4012B\nPatient: Riley Morgan\n\nDOB: 03/18/1979\n\nExam: Ultrasound thyroid\nImpression: Please see radiologist narrative.\n\nThis page is an imaging report.\n\nCONFIDENTIAL - SYNTHETIC TRAINING DOCUMENT\nTransmission FX-212 Page 3 of 3\n\n"
+   }
+  ]
+ }
+}
