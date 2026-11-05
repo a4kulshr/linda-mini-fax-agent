@@ -221,10 +221,12 @@ def run(fresh=False, headed=False):
             save(state)
         a.close()
 
+        # Decisions are frozen once made: on resume our own routes show as "Routed" and must not
+        # be re-decided as already_routed.
         readable = [r for r in state["faxes"].values() if r.get("evidence")]
         for fid, d in decide(readable).items():
             rec = state["faxes"][fid]
-            if not rec.get("final"):
+            if not rec.get("final") and "decision" not in rec:
                 rec["decision"] = d
         save(state)
 
