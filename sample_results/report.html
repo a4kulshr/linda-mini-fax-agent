@@ -1,0 +1,194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linda Mini run report</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FCFBF8;--card:#fff;--ink:#35423C;--muted:#6B7770;--line:#E9EFEA;--soft:#EDF2EE;
+--green:#45D48E;--mint:#B7F5D9;--blue:#1B38C9;--warn:#B45309;--warnbg:#FEF3C7;--bad:#B91C1C;--badbg:#FEE2E2;
+--display:'Bricolage Grotesque',system-ui,sans-serif;--body:'Instrument Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:1120px;margin:0 auto;padding:40px 20px 80px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 40px/1.1 var(--display);margin:8px 0 6px;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:0 0 28px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.tile b{display:block;font:700 34px var(--display)}.tile span{color:var(--muted);font-size:13px}
+.tile.ok{background:var(--mint);border-color:var(--mint)}
+.fax{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:90px 150px 1fr auto;gap:14px;align-items:center;padding:14px 18px}
+summary::-webkit-details-marker{display:none}
+.id{font:600 14px var(--mono)}.why{color:var(--muted);font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pill{display:inline-block;font:600 12px var(--mono);padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--ink);white-space:nowrap}
+.pill.ok{background:var(--mint);color:#14532D}.pill.warn{background:var(--warnbg);color:var(--warn)}
+.pill.bad{background:var(--badbg);color:var(--bad)}.pill.muted{background:var(--soft);color:var(--muted)}
+.check{font:500 12px var(--mono);color:var(--muted)}.check.v{color:#15803D}
+.body{border-top:1px solid var(--line);padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.body h4{margin:0 0 4px;font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.body p,.body ul{margin:0 0 6px}.body ul{padding-left:18px}.mono{font:13px var(--mono)}
+.full{grid-column:1/-1}
+footer{margin-top:36px;color:var(--muted);font-size:13px}
+@media(max-width:720px){summary{grid-template-columns:1fr auto}.why{display:none}.body{grid-template-columns:1fr}h1{font-size:30px}}
+</style></head><body><div class="wrap">
+<div class="eyebrow">Linda Mini &middot; fax routing run</div>
+<h1>12 faxes processed</h1>
+<p class="sub">10 submitted routes confirmed by re-reading the portal UI. Click a fax for the evidence behind its decision.</p>
+<div class="tiles"><div class="tile ok"><b>7</b><span>Routed</span></div><div class="tile "><b>3</b><span>Needs review</span></div><div class="tile "><b>1</b><span>Skipped duplicate</span></div><div class="tile "><b>1</b><span>Already routed</span></div></div>
+<details class="fax"><summary>
+<span class="id">FX-201</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Referral</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:02 &middot; Bayview Family Practice &middot; 2 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: FAX COVER SHEET</li><li>p2: NEW PATIENT REFERRAL REQUEST</li></ul><p class="mono">p1 93%, p2 95%</p></div>
+<div><h4>Routed to</h4><p>Olivia Chen - Referrals / Referral / Referrals / New</p></div>
+<div><h4>Read back from portal</h4><p>Olivia Chen - Referrals / Referral / Referrals / New</p></div>
+<div><h4>Source ID</h4><p class="mono">RF-3001</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-201:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-202</span><span><span class="pill warn">Needs review</span></span>
+<span class="why">explicit flag on p1: &quot;CRITICAL RESULT - CALLING PROVIDER&quot;</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:06 &middot; Summit Diagnostic Labs &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: LABORATORY RESULTS</li></ul><p class="mono">p1 92%</p></div>
+<div><h4>Routed to</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Read back from portal</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Source ID</h4><p class="mono">LAB-8302</p></div>
+<div><h4>Flags</h4><ul><li>p1: CRITICAL RESULT - CALLING PROVIDER</li><li>p1: Critical value notification documented at 07:55.</li></ul></div>
+<div class="full"><h4>Review reasons</h4><ul><li>explicit flag on p1: &quot;CRITICAL RESULT - CALLING PROVIDER&quot;</li></ul></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-202:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-203</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Imaging Report</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:12 &middot; Blue Ridge Medical &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: DIAGNOSTIC IMAGING REPORT</li></ul><p class="mono">p1 93%</p></div>
+<div><h4>Routed to</h4><p>Noah Patel - Clinical Review / Imaging Report / Clinical / Imaging</p></div>
+<div><h4>Read back from portal</h4><p>Noah Patel - Clinical Review / Imaging Report / Clinical / Imaging</p></div>
+<div><h4>Source ID</h4><p class="mono">IMG-4003</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-203:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-204</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Prior Authorization</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:12 &middot; Blue Ridge Medical &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: PRIOR AUTHORIZATION REQUEST</li></ul><p class="mono">p1 92%</p></div>
+<div><h4>Routed to</h4><p>Ethan Brooks - Authorizations / Prior Authorization / Authorizations / Pending</p></div>
+<div><h4>Read back from portal</h4><p>Ethan Brooks - Authorizations / Prior Authorization / Authorizations / Pending</p></div>
+<div><h4>Source ID</h4><p class="mono">PA-4004</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-204:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-205</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Refill Request</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:19 &middot; Harbor Community Pharmacy &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: PRESCRIPTION REFILL REQUEST</li></ul><p class="mono">p1 94%</p></div>
+<div><h4>Routed to</h4><p>Ava Wilson - Nursing / Medication / Refill Request / Nursing / Medication</p></div>
+<div><h4>Read back from portal</h4><p>Ava Wilson - Nursing / Medication / Refill Request / Nursing / Medication</p></div>
+<div><h4>Source ID</h4><p class="mono">RX-4005</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-205:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-206</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Records Request</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:25 &middot; Hillside Records Office &middot; 2 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: REQUEST FOR MEDICAL RECORDS</li><li>p2: AUTHORIZATION TO RELEASE INFORMATION</li></ul><p class="mono">p1 95%, p2 95%</p></div>
+<div><h4>Routed to</h4><p>Mia Gomez - Medical Records / Records Request / Records / Requests</p></div>
+<div><h4>Read back from portal</h4><p>Mia Gomez - Medical Records / Records Request / Records / Requests</p></div>
+<div><h4>Source ID</h4><p class="mono">MR-4006</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-206:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-207</span><span><span class="pill ok">Routed</span></span>
+<span class="why">EOB</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:31 &middot; Example Health Plan &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: EXPLANATION OF BENEFITS (EOB)</li></ul><p class="mono">p1 93%</p></div>
+<div><h4>Routed to</h4><p>Liam Rivera - Billing / EOB / Billing / EOBs</p></div>
+<div><h4>Read back from portal</h4><p>Liam Rivera - Billing / EOB / Billing / EOBs</p></div>
+<div><h4>Source ID</h4><p class="mono">EOB-4007</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-207:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-208</span><span><span class="pill ok">Routed</span></span>
+<span class="why">Lab Result</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:37 &middot; Summit Diagnostic Labs &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: LABORATORY REPORT</li></ul><p class="mono">p1 91%</p></div>
+<div><h4>Routed to</h4><p>Noah Patel - Clinical Review / Lab Result / Clinical / Labs</p></div>
+<div><h4>Read back from portal</h4><p>Noah Patel - Clinical Review / Lab Result / Clinical / Labs</p></div>
+<div><h4>Source ID</h4><p class="mono">LAB-4008</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-208:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-209</span><span><span class="pill warn">Needs review</span></span>
+<span class="why">incomplete/unclear on p1: &quot;Attached page appears incomplete.&quot;</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:42 &middot; Unidentified Fax Number &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: FAX DOCUMENT</li></ul><p class="mono">p1 93%</p></div>
+<div><h4>Routed to</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Read back from portal</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Source ID</h4><p class="mono">-</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><ul><li>incomplete/unclear on p1: &quot;Attached page appears incomplete.&quot;</li><li>no document category established from page headings</li></ul></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-209:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-210</span><span><span class="pill muted">Skipped duplicate</span></span>
+<span class="why">resend of FX-201</span><span class="check ">not submitted</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:49 &middot; Bayview Family Practice &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: FAX RESEND - REFERRAL REQUEST</li></ul><p class="mono">p1 92%</p></div>
+<div><h4>Routed to</h4><p>-</p></div>
+<div><h4>Read back from portal</h4><p>-</p></div>
+<div><h4>Source ID</h4><p class="mono">RF-3001</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><p>-</p></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-211</span><span><span class="pill muted">Already routed</span></span>
+<span class="why">routed before this run; left untouched</span><span class="check ">not submitted</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 08:54 &middot; Northbridge Imaging &middot; 1 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: FINAL IMAGING REPORT</li></ul><p class="mono">p1 94%</p></div>
+<div><h4>Routed to</h4><p>-</p></div>
+<div><h4>Read back from portal</h4><p>Imaging Report / Noah Patel - Clinical Review / Clinical / Imaging</p></div>
+<div><h4>Source ID</h4><p class="mono">IMG-4111</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><p>-</p></div>
+<div class="full"><h4>Submit attempts</h4><p>-</p></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details><details class="fax"><summary>
+<span class="id">FX-212</span><span><span class="pill warn">Needs review</span></span>
+<span class="why">mixed packet: imaging, lab</span><span class="check v">verified</span></summary>
+<div class="body">
+<div><h4>Received</h4><p>2026-11-03 09:03 &middot; Central Care Associates &middot; 3 page(s)</p></div>
+<div><h4>Pages (OCR confidence)</h4><ul><li>p1: FAX COVER - MULTIPLE ENCLOSURES</li><li>p2: LABORATORY REPORT</li><li>p3: RADIOLOGY REPORT</li></ul><p class="mono">p1 92%, p2 94%, p3 95%</p></div>
+<div><h4>Routed to</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Read back from portal</h4><p>Jordan Ellis - Manual Review / Needs Review / Review / Unclassified</p></div>
+<div><h4>Source ID</h4><p class="mono">LAB-4012A</p></div>
+<div><h4>Flags</h4><ul></ul></div>
+<div class="full"><h4>Review reasons</h4><ul><li>mixed packet: imaging, lab</li><li>packet declares multiple documents (p1)</li></ul></div>
+<div class="full"><h4>Submit attempts</h4><ul><li>#1 in B:FX-212:1: Fax routing was recorded successfully.</li></ul></div>
+<div class="full"><h4>Errors and retries</h4><ul></ul></div>
+</div></details>
+<footer>Generated from results.json. Routing notes are not shown by the portal, so verification covers assignee, document type and folder.</footer>
+</div></body></html>

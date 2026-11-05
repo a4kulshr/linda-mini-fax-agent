@@ -17,3 +17,4 @@ for r in json.load(open("runs/results.json"))["faxes"]:
     f = r["selected_fields"] or {}
     print(f'{r["fax_id"]}  {r["action"]:<18} {r["verification"] or "":<14} {f.get("doc_type") or "-":<20} {(r["duplicate_of"] or "")}')
 PY
+$PY -m linda_agent.report runs/results.json

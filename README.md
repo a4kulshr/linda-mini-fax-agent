@@ -35,6 +35,7 @@ Output goes to `runs/`:
 
 - `results.json`: per fax, the OCR page titles and confidence, source ID and every labelled identifier, flags with page and line, review reasons, duplicate link, action, selected fields, note, fields read back from the UI, verification, submit attempts, sessions used, and errors and retries.
 - `results.csv`: the flat version.
+- `report.html`: a readable page of the same results, one expandable card per fax with its evidence (`python -m linda_agent.report` regenerates it).
 - `state.json`: the checkpoint.
 - `downloads/`: the PDFs as downloaded through the portal.
 
