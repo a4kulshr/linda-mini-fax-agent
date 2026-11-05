@@ -1,0 +1,786 @@
+{
+ "summary": {
+  "routed": 7,
+  "needs_review": 3,
+  "skipped_duplicate": 1,
+  "already_routed": 1
+ },
+ "faxes": [
+  {
+   "fax_id": "FX-201",
+   "received_at": "2026-11-03 08:02",
+   "sender": "Bayview Family Practice",
+   "pages_ui": 2,
+   "pdf_sha256": "3e5d967db98e1c52d6dd7a83eaa50620e65ca51fa2bf1c9a622720e019e88a39",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 93.3,
+     "readable": true
+    },
+    {
+     "page": 2,
+     "confidence": 94.7,
+     "readable": true
+    }
+   ],
+   "extracted_category": "referral",
+   "page_titles": [
+    [
+     1,
+     "FAX COVER SHEET"
+    ],
+    [
+     2,
+     "NEW PATIENT REFERRAL REQUEST"
+    ]
+   ],
+   "source_id": "RF-3001",
+   "identifiers": [
+    {
+     "page": 2,
+     "label": "Document ID",
+     "value": "RF-3001"
+    }
+   ],
+   "patient": "Elena Hart",
+   "dob": "04/16/1987",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Olivia Chen - Referrals",
+    "doc_type": "Referral",
+    "folder": "Referrals / New"
+   },
+   "note": "referral per page headings; source RF-3001",
+   "observed_fields": {
+    "assignee": "Olivia Chen - Referrals",
+    "doc_type": "Referral",
+    "folder": "Referrals / New"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-201:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-201:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-202",
+   "received_at": "2026-11-03 08:06",
+   "sender": "Summit Diagnostic Labs",
+   "pages_ui": 1,
+   "pdf_sha256": "519e074e41a3bc3d89aba0eaa42e512bdad98db090992b48a89d2685edddf8cc",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 92.0,
+     "readable": true
+    }
+   ],
+   "extracted_category": "lab",
+   "page_titles": [
+    [
+     1,
+     "LABORATORY RESULTS"
+    ]
+   ],
+   "source_id": "LAB-8302",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Document reference",
+     "value": "LAB-8302"
+    }
+   ],
+   "patient": "Marcus Bell",
+   "dob": "09/03/1974",
+   "flags": [
+    {
+     "page": 1,
+     "line": "CRITICAL RESULT - CALLING PROVIDER"
+    },
+    {
+     "page": 1,
+     "line": "Critical value notification documented at 07:55."
+    }
+   ],
+   "review_reasons": [
+    "explicit flag on p1: \"CRITICAL RESULT - CALLING PROVIDER\""
+   ],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "needs_review",
+   "selected_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "note": "explicit flag on p1: \"CRITICAL RESULT - CALLING PROVIDER\"",
+   "observed_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-202:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-202:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-203",
+   "received_at": "2026-11-03 08:12",
+   "sender": "Blue Ridge Medical",
+   "pages_ui": 1,
+   "pdf_sha256": "ab215f8f481801f254bc5f983145ee848d42123c728024ce1354f376c3da4ded",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 93.1,
+     "readable": true
+    }
+   ],
+   "extracted_category": "imaging",
+   "page_titles": [
+    [
+     1,
+     "DIAGNOSTIC IMAGING REPORT"
+    ]
+   ],
+   "source_id": "IMG-4003",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Accession Number",
+     "value": "IMG-4003"
+    }
+   ],
+   "patient": "Naomi Lee",
+   "dob": "12/11/1990",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Noah Patel - Clinical Review",
+    "doc_type": "Imaging Report",
+    "folder": "Clinical / Imaging"
+   },
+   "note": "imaging per page headings; source IMG-4003",
+   "observed_fields": {
+    "assignee": "Noah Patel - Clinical Review",
+    "doc_type": "Imaging Report",
+    "folder": "Clinical / Imaging"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-203:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-203:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-204",
+   "received_at": "2026-11-03 08:12",
+   "sender": "Blue Ridge Medical",
+   "pages_ui": 1,
+   "pdf_sha256": "201436548e34065cc195238547b3c30bb9b759c47cbc106a9bc1a654268766ba",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 91.8,
+     "readable": true
+    }
+   ],
+   "extracted_category": "prior_auth",
+   "page_titles": [
+    [
+     1,
+     "PRIOR AUTHORIZATION REQUEST"
+    ]
+   ],
+   "source_id": "PA-4004",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Request ID",
+     "value": "PA-4004"
+    }
+   ],
+   "patient": "Oliver Grant",
+   "dob": "06/21/1983",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Ethan Brooks - Authorizations",
+    "doc_type": "Prior Authorization",
+    "folder": "Authorizations / Pending"
+   },
+   "note": "prior_auth per page headings; source PA-4004",
+   "observed_fields": {
+    "assignee": "Ethan Brooks - Authorizations",
+    "doc_type": "Prior Authorization",
+    "folder": "Authorizations / Pending"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-204:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-204:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-205",
+   "received_at": "2026-11-03 08:19",
+   "sender": "Harbor Community Pharmacy",
+   "pages_ui": 1,
+   "pdf_sha256": "91819d99630c246be302e3100140612a53ebae691e137b31761c4804fbfe0cf0",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 93.8,
+     "readable": true
+    }
+   ],
+   "extracted_category": "refill",
+   "page_titles": [
+    [
+     1,
+     "PRESCRIPTION REFILL REQUEST"
+    ]
+   ],
+   "source_id": "RX-4005",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Request number",
+     "value": "RX-4005"
+    }
+   ],
+   "patient": "Sydney Patel",
+   "dob": "08/07/1988",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Ava Wilson - Nursing / Medication",
+    "doc_type": "Refill Request",
+    "folder": "Nursing / Medication"
+   },
+   "note": "refill per page headings; source RX-4005",
+   "observed_fields": {
+    "assignee": "Ava Wilson - Nursing / Medication",
+    "doc_type": "Refill Request",
+    "folder": "Nursing / Medication"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-205:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-205:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-206",
+   "received_at": "2026-11-03 08:25",
+   "sender": "Hillside Records Office",
+   "pages_ui": 2,
+   "pdf_sha256": "44b68d8fcf367def23745addd79d26d47c17e930f4b5a496feb2d0a4aef0f958",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 94.9,
+     "readable": true
+    },
+    {
+     "page": 2,
+     "confidence": 94.7,
+     "readable": true
+    }
+   ],
+   "extracted_category": "records",
+   "page_titles": [
+    [
+     1,
+     "REQUEST FOR MEDICAL RECORDS"
+    ],
+    [
+     2,
+     "AUTHORIZATION TO RELEASE INFORMATION"
+    ]
+   ],
+   "source_id": "MR-4006",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Records request ID",
+     "value": "MR-4006"
+    }
+   ],
+   "patient": "Cameron Blake",
+   "dob": "02/09/1980",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Mia Gomez - Medical Records",
+    "doc_type": "Records Request",
+    "folder": "Records / Requests"
+   },
+   "note": "records per page headings; source MR-4006",
+   "observed_fields": {
+    "assignee": "Mia Gomez - Medical Records",
+    "doc_type": "Records Request",
+    "folder": "Records / Requests"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-206:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-206:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-207",
+   "received_at": "2026-11-03 08:31",
+   "sender": "Example Health Plan",
+   "pages_ui": 1,
+   "pdf_sha256": "c8c9944ada8c5582dcfdf79373b5ac773d1812db29f50f518be4265f0ac59b32",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 93.3,
+     "readable": true
+    }
+   ],
+   "extracted_category": "eob",
+   "page_titles": [
+    [
+     1,
+     "EXPLANATION OF BENEFITS (EOB)"
+    ]
+   ],
+   "source_id": "EOB-4007",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Remittance ID",
+     "value": "EOB-4007"
+    }
+   ],
+   "patient": "Jordan Clark",
+   "dob": null,
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Liam Rivera - Billing",
+    "doc_type": "EOB",
+    "folder": "Billing / EOBs"
+   },
+   "note": "eob per page headings; source EOB-4007",
+   "observed_fields": {
+    "assignee": "Liam Rivera - Billing",
+    "doc_type": "EOB",
+    "folder": "Billing / EOBs"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-207:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-207:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-208",
+   "received_at": "2026-11-03 08:37",
+   "sender": "Summit Diagnostic Labs",
+   "pages_ui": 1,
+   "pdf_sha256": "4678dd0bb54f64d50a90220d2602cfca4a4f81b74e58485bda445fa5caa98fc0",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 91.3,
+     "readable": true
+    }
+   ],
+   "extracted_category": "lab",
+   "page_titles": [
+    [
+     1,
+     "LABORATORY REPORT"
+    ]
+   ],
+   "source_id": "LAB-4008",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Report ID",
+     "value": "LAB-4008"
+    }
+   ],
+   "patient": "Talia Nguyen",
+   "dob": "01/27/1993",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "routed",
+   "selected_fields": {
+    "assignee": "Noah Patel - Clinical Review",
+    "doc_type": "Lab Result",
+    "folder": "Clinical / Labs"
+   },
+   "note": "lab per page headings; source LAB-4008",
+   "observed_fields": {
+    "assignee": "Noah Patel - Clinical Review",
+    "doc_type": "Lab Result",
+    "folder": "Clinical / Labs"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-208:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-208:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-209",
+   "received_at": "2026-11-03 08:42",
+   "sender": "Unidentified Fax Number",
+   "pages_ui": 1,
+   "pdf_sha256": "587f25e225a1fce32d1f02205c969752e3b88f1adc15a4f6b2a1267c411e3d88",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 92.7,
+     "readable": true
+    }
+   ],
+   "extracted_category": null,
+   "page_titles": [
+    [
+     1,
+     "FAX DOCUMENT"
+    ]
+   ],
+   "source_id": null,
+   "identifiers": [],
+   "patient": null,
+   "dob": null,
+   "flags": [],
+   "review_reasons": [
+    "incomplete/unclear on p1: \"Attached page appears incomplete.\"",
+    "no document category established from page headings"
+   ],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "needs_review",
+   "selected_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "note": "incomplete/unclear on p1: \"Attached page appears incomplete.\"; no document category established from page headings",
+   "observed_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-209:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-209:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  },
+  {
+   "fax_id": "FX-210",
+   "received_at": "2026-11-03 08:49",
+   "sender": "Bayview Family Practice",
+   "pages_ui": 1,
+   "pdf_sha256": "4f74c305a578dce2d44fced440e8eda3f95c3405681ed260fe3ad9b65c75ab4e",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 92.0,
+     "readable": true
+    }
+   ],
+   "extracted_category": "referral",
+   "page_titles": [
+    [
+     1,
+     "FAX RESEND - REFERRAL REQUEST"
+    ]
+   ],
+   "source_id": "RF-3001",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Original Document ID",
+     "value": "RF-3001"
+    }
+   ],
+   "patient": "Elena Hart",
+   "dob": "04/16/1987",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": "FX-201",
+   "related_faxes": [
+    "FX-201"
+   ],
+   "action": "skipped_duplicate",
+   "selected_fields": null,
+   "note": "confirmed resend of FX-201 (source RF-3001); original is routed by this run",
+   "observed_fields": null,
+   "verification": "not_submitted",
+   "verification_detail": null,
+   "submit_attempts": [],
+   "sessions": null,
+   "errors": []
+  },
+  {
+   "fax_id": "FX-211",
+   "received_at": "2026-11-03 08:54",
+   "sender": "Northbridge Imaging",
+   "pages_ui": 1,
+   "pdf_sha256": "83838a6b6580e6d70d9abe889f2dfe97e7ca77fe3414b3721530c53460e90cdc",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 94.1,
+     "readable": true
+    }
+   ],
+   "extracted_category": "imaging",
+   "page_titles": [
+    [
+     1,
+     "FINAL IMAGING REPORT"
+    ]
+   ],
+   "source_id": "IMG-4111",
+   "identifiers": [
+    {
+     "page": 1,
+     "label": "Accession",
+     "value": "IMG-4111"
+    }
+   ],
+   "patient": "Elliot Brooks",
+   "dob": "07/18/1991",
+   "flags": [],
+   "review_reasons": [],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "already_routed",
+   "selected_fields": null,
+   "note": null,
+   "observed_fields": {
+    "doc_type": "Imaging Report",
+    "assignee": "Noah Patel - Clinical Review",
+    "folder": "Clinical / Imaging"
+   },
+   "verification": "not_submitted",
+   "verification_detail": null,
+   "submit_attempts": [],
+   "sessions": null,
+   "errors": []
+  },
+  {
+   "fax_id": "FX-212",
+   "received_at": "2026-11-03 09:03",
+   "sender": "Central Care Associates",
+   "pages_ui": 3,
+   "pdf_sha256": "38773f9acc30d67ab6aac62f42b3799534c45cfeb76fd426fff77575c5e4bbcb",
+   "ocr_pages": [
+    {
+     "page": 1,
+     "confidence": 92.0,
+     "readable": true
+    },
+    {
+     "page": 2,
+     "confidence": 94.1,
+     "readable": true
+    },
+    {
+     "page": 3,
+     "confidence": 94.8,
+     "readable": true
+    }
+   ],
+   "extracted_category": null,
+   "page_titles": [
+    [
+     1,
+     "FAX COVER - MULTIPLE ENCLOSURES"
+    ],
+    [
+     2,
+     "LABORATORY REPORT"
+    ],
+    [
+     3,
+     "RADIOLOGY REPORT"
+    ]
+   ],
+   "source_id": "LAB-4012A",
+   "identifiers": [
+    {
+     "page": 2,
+     "label": "Document number",
+     "value": "LAB-4012A"
+    },
+    {
+     "page": 3,
+     "label": "Document number",
+     "value": "IMG-4012B"
+    }
+   ],
+   "patient": "Riley Morgan",
+   "dob": "03/18/1979",
+   "flags": [],
+   "review_reasons": [
+    "mixed packet: imaging, lab",
+    "packet declares multiple documents (p1)"
+   ],
+   "duplicate_of": null,
+   "related_faxes": [],
+   "action": "needs_review",
+   "selected_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "note": "mixed packet: imaging, lab; packet declares multiple documents (p1)",
+   "observed_fields": {
+    "assignee": "Jordan Ellis - Manual Review",
+    "doc_type": "Needs Review",
+    "folder": "Review / Unclassified"
+   },
+   "verification": "verified",
+   "verification_detail": "fax detail + Routed Documents show the intended values (notes are not shown by the UI)",
+   "submit_attempts": [
+    {
+     "attempt": 1,
+     "session": "B:FX-212:1",
+     "page_after_submit": "Fax routing was recorded successfully."
+    }
+   ],
+   "sessions": [
+    {
+     "name": "B:FX-212:1",
+     "logins": 1
+    }
+   ],
+   "errors": []
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+fax_id,received_at,extracted_category,source_id,action,duplicate_of,verification,assignee,doc_type,folder,note,retries,errors
+FX-201,2026-11-03 08:02,referral,RF-3001,routed,,verified,Olivia Chen - Referrals,Referral,Referrals / New,referral per page headings; source RF-3001,1,
+FX-202,2026-11-03 08:06,lab,LAB-8302,needs_review,,verified,Jordan Ellis - Manual Review,Needs Review,Review / Unclassified,"explicit flag on p1: ""CRITICAL RESULT - CALLING PROVIDER""",1,
+FX-203,2026-11-03 08:12,imaging,IMG-4003,routed,,verified,Noah Patel - Clinical Review,Imaging Report,Clinical / Imaging,imaging per page headings; source IMG-4003,1,
+FX-204,2026-11-03 08:12,prior_auth,PA-4004,routed,,verified,Ethan Brooks - Authorizations,Prior Authorization,Authorizations / Pending,prior_auth per page headings; source PA-4004,1,
+FX-205,2026-11-03 08:19,refill,RX-4005,routed,,verified,Ava Wilson - Nursing / Medication,Refill Request,Nursing / Medication,refill per page headings; source RX-4005,1,
+FX-206,2026-11-03 08:25,records,MR-4006,routed,,verified,Mia Gomez - Medical Records,Records Request,Records / Requests,records per page headings; source MR-4006,1,
+FX-207,2026-11-03 08:31,eob,EOB-4007,routed,,verified,Liam Rivera - Billing,EOB,Billing / EOBs,eob per page headings; source EOB-4007,1,
+FX-208,2026-11-03 08:37,lab,LAB-4008,routed,,verified,Noah Patel - Clinical Review,Lab Result,Clinical / Labs,lab per page headings; source LAB-4008,1,
+FX-209,2026-11-03 08:42,,,needs_review,,verified,Jordan Ellis - Manual Review,Needs Review,Review / Unclassified,"incomplete/unclear on p1: ""Attached page appears incomplete.""; no document category established from page headings",1,
+FX-210,2026-11-03 08:49,referral,RF-3001,skipped_duplicate,FX-201,not_submitted,,,,confirmed resend of FX-201 (source RF-3001); original is routed by this run,0,
+FX-211,2026-11-03 08:54,imaging,IMG-4111,already_routed,,not_submitted,,,,,0,
+FX-212,2026-11-03 09:03,,LAB-4012A,needs_review,,verified,Jordan Ellis - Manual Review,Needs Review,Review / Unclassified,"mixed packet: imaging, lab; packet declares multiple documents (p1)",1,
