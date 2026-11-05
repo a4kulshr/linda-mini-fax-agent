@@ -32,7 +32,7 @@ INCOMPLETE = re.compile(r"\bincomplete\b|\bmissing\b|\billegible\b|\bunreadable\
 MULTIPLE = re.compile(r"multiple (documents|enclosures)|different purposes|mixed packet", re.I)
 RESEND = re.compile(r"\bRESEND\b|RETRANSMI|\bORIGINAL DOCUMENT ID\b|SAME .* AS PREVIOUSLY SENT", re.I)
 
-ID_LINE = re.compile(r"^\s*(?P<label>[A-Za-z][A-Za-z ]{0,40}?(?:ID|Id|reference|Reference|number|Number))\s*:\s*"
+ID_LINE = re.compile(r"^\s*(?P<label>(?:[A-Za-z][A-Za-z ]{0,40}?)?(?:ID|Id|reference|Reference|number|Number|Accession))\s*:\s*"
                      r"(?P<value>[A-Z0-9][A-Z0-9lIO]{0,5}-[A-Z0-9lIO]{2,10})\b", re.M)
 NOT_SOURCE = re.compile(r"claim|member|callback|phone|transmission", re.I)
 PATIENT = re.compile(r"^\s*(?:Patient|Member)\s*:\s*(.+)$", re.M)
