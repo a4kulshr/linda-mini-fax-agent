@@ -7,3 +7,4 @@ artifacts/
 downloads/
 *.log
 runs/
+runs-server.log
